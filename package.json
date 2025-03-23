@@ -1,0 +1,13 @@
+{
+  "name": "fuelbites-website",
+  "version": "1.0.0",
+  "description": "FuelBites - High-Protein Meal Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "echo 'No build step needed'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {}
+}
