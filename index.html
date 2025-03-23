@@ -3,40 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuelBites - High-Protein Meals</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        header { background: #28a745; color: white; padding: 20px; font-size: 24px; }
-        .container { padding: 20px; }
-        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; }
-        .cart-btn { background: #ff9800; color: white; padding: 10px; cursor: pointer; border: none; }
-        .next-btn { background: #28a745; color: white; padding: 10px; text-decoration: none; display: block; margin-top: 20px; }
-    </style>
-    <script>
-        let cart = [];
-        function addToCart(product) {
-            cart.push(product);
-            localStorage.setItem("cart", JSON.stringify(cart));
-            alert(product + " added to cart!");
-        }
-    </script>
+    <title>FuelBites</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>FuelBites - Your One-Meal Protein Solution</header>
-    <div class="container">
-        <h2>Train Your Body with the Best Nutrition</h2>
-        <p>We provide high-protein, balanced meals in one go.</p>
-        <div class="product">
-            <h3>FuelBites Meal Pack</h3>
-            <p>✔ High Protein ✔ Balanced Nutrition ✔ Delicious</p>
-            <button class="cart-btn" onclick="addToCart('FuelBites Meal Pack')">Add to Cart</button>
-        </div>
-        <div class="product">
-            <h3>FuelBites Power Shake</h3>
-            <p>✔ Packed with Protein ✔ Energy Booster ✔ Tasty</p>
-            <button class="cart-btn" onclick="addToCart('FuelBites Power Shake')">Add to Cart</button>
-        </div>
-        <a href="customer-info.html" class="next-btn">Proceed to Next Step</a>
-    </div>
+    <header>
+        <h1>Welcome to FuelBites</h1>
+    </header>
+    <main>
+        <p>Your go-to platform for fuel insights!</p>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
