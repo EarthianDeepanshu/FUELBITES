@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - FuelBites</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .checkout-container { max-width: 400px; margin: auto; padding: 20px; background: #f8f8f8; border-radius: 10px; }
+        .pay-btn { background: #ff9800; color: white; padding: 10px; text-decoration: none; display: block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Checkout</h2>
+    <div class="checkout-container">
+        <h3>Order Summary</h3>
+        <p id="order-summary"></p>
+        <h3>Total: $XX.XX</h3>
+        <a href="https://www.paypal.com/" class="pay-btn">Proceed to Payment</a>
+    </div>
+    <script>
+        document.getElementById("order-summary").innerText = localStorage.getItem("cart") || "No items selected";
+    </script>
+</body>
+</html>

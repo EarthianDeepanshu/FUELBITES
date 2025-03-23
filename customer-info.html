@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information - FuelBites</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
+        .form-container { max-width: 400px; margin: auto; padding: 20px; background: #f8f8f8; border-radius: 10px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; }
+        .next-btn { background: #28a745; color: white; padding: 10px; text-decoration: none; display: block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Start Your Nutrition Journey</h2>
+    <p>Enter your details to proceed:</p>
+    <div class="form-container">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="phone" placeholder="Your Phone Number" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <h3>Selected Products:</h3>
+        <p id="cart-items"></p>
+        <a href="checkout.html" class="next-btn">Proceed to Checkout</a>
+    </div>
+    <script>
+        document.getElementById("cart-items").innerText = localStorage.getItem("cart") || "No items selected";
+    </script>
+</body>
+</html>
